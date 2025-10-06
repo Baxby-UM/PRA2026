@@ -93,7 +93,7 @@ for (nm in names(coef_c)) {
 
 #----------Plotting
 #save
-png("climbers_mean_grades_1080p.png", width = 1920, height = 1080, res = 150)
+png("plots/climbers_mean_grades_1080p.png", width = 1920, height = 1080, res = 150)
 
 #margins
 par(mar = c(4.5, 4.5, 8, 2))
@@ -220,7 +220,7 @@ routes_filtered$country_upper <- factor(routes_filtered$country_upper,
                                         levels = c("FRA", sort(setdiff(unique(routes_filtered$country_upper), "FRA"))))
 
 #save
-png("routes_mean_grades_1080p.png", width = 1920, height = 1080, res = 150)
+png("plots/routes_mean_grades_1080p.png", width = 1920, height = 1080, res = 150)
 
 
 #margins
